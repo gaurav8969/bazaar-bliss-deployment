@@ -1,0 +1,145 @@
+/* App.css */
+
+/* Base Styles */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s, color 0.3s, font-size 0.3s;
+}
+
+/* Fancy Bazaar Bliss Heading */
+h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Pacifico', cursive;
+  color: #ff4a02;
+}
+
+/* Fancy Bazaar Bliss Heading with Separate Background */
+.fancy-header {
+  background-color: #f75b12;
+  color: white;
+  padding: 20px 0;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 3rem;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  font-size: 0.875rem;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+  padding: 8px 12px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Customizable UI Styles */
+.cui-controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  margin: 0 10px;
+}
+
+.dropdown-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-content button:hover {
+  background-color: #ddd;
+}
+
+/* Theme Classes */
+.light-theme {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.dark-theme {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+/* Font Size Classes */
+.small-font {
+  font-size: 0.8rem;
+}
+
+.medium-font {
+  font-size: 1rem;
+}
+
+.large-font {
+  font-size: 1.2rem;
+}
+
+/* Layout Classes */
+.grid-layout .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-layout .container {
+  display: block;
+}
+
+.list-layout .card {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.list-layout .card img {
+  max-width: 150px;
+  margin-right: 20px;
+  float: left;
+}
+
+.list-layout .card-body {
+  text-align: left;
+}
