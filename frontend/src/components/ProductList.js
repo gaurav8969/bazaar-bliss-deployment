@@ -9,7 +9,7 @@ function ProductList() {
     const { addToCart } = useContext(CartContext);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/api/products')
+        axios.get('https://bazaar-bliss-backend.vercel.app/api/products')
             .then(response => setProducts(response.data))
             .catch(error => console.error('Error fetching products:', error));
     }, []);

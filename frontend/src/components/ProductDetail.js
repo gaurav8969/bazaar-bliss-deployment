@@ -10,7 +10,7 @@ function ProductDetail() {
     const [recommendedProducts, setRecommendedProducts] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/api/products/${id}`)
+        axios.get(`https://bazaar-bliss-backend.vercel.app/api/products/${id}`)
             .then(response => {
                 setProduct(response.data);
                 TrackUserBehavior.trackProductView(response.data);
