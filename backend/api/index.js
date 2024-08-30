@@ -10,6 +10,10 @@ app.use(express.json());
 
 const users = []; // In-memory user store
 
+app.get('/', (req, res) => {
+    res.send("This is the / route. Hello...");
+});
+
 // Register a new user
 app.post('/api/register', async (req, res) => {
     const { username, password } = req.body;
